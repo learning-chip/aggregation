@@ -129,3 +129,18 @@ target_link_libraries(Hdagg_SpTRSV PUBLIC
         aggregation
         metis::metis)
 ################################################################################
+
+
+################################################################################
+# Standalone HDagg SpTRSV experiment
+add_executable(hdagg_demo
+        hdagg_demo.cpp
+        ${Sparse_TRSV_SRC_FILES}
+        )
+target_include_directories(hdagg_demo PRIVATE
+        ${Sparse_TRSV_INC}
+        )
+target_link_libraries(hdagg_demo PUBLIC
+        aggregation
+        metis::metis)
+################################################################################
