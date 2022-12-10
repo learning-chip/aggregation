@@ -35,3 +35,6 @@
 .idea/
 cmake-build-release
 cmake-build-debug
+
+# CMake build
+build*
